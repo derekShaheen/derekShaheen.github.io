@@ -3,15 +3,7 @@ viewer = pannellum.viewer('panorama', {
   "type": "equirectangular",
   "panorama": "Equirectangular.png",
   "hotSpots": [
-    {
-      "pitch": 2.5,
-      "yaw": 13,
-      "cssClass": "custom-hotspot",
-      "clickHandlerFunc": function () { handleOpenRightPanel("bulletin") },
-      "createTooltipFunc": hotspot,
-      "createTooltipArgs": "CSS bulletin"
-    },
-    {
+    { // 3
       "pitch": -3,
       "yaw": -119,
       "cssClass": "custom-hotspot",
@@ -19,15 +11,15 @@ viewer = pannellum.viewer('panorama', {
       "createTooltipFunc": hotspot,
       "createTooltipArgs": "Historical Archives"
     },
-    {
-      "pitch": -26,
-      "yaw": 40,
+    { // 8
+      "pitch": -25,
+      "yaw": -40,
       "cssClass": "custom-hotspot",
       "clickHandlerFunc": function () { handleOpenModal("newspaper") },
       "createTooltipFunc": hotspot,
-      "createTooltipArgs": "CSS Newspaper"
+      "createTooltipArgs": "The Script News"
     },
-    // Coffee edit
+    // 11
     {
       "pitch": -4,
       "yaw": 31,
@@ -36,7 +28,7 @@ viewer = pannellum.viewer('panorama', {
       "createTooltipFunc": hotspot,
       "createTooltipArgs": "Coffee Pot"
     },
-    {
+    {// 4
       "pitch": 5,
       "yaw": 179,
       "cssClass": "custom-hotspot",
@@ -44,7 +36,7 @@ viewer = pannellum.viewer('panorama', {
       "createTooltipFunc": hotspot,
       "createTooltipArgs": "Window"
     },
-    {
+    {// 2
       "pitch": 5,
       "yaw": 123,
       "cssClass": "custom-hotspot",
@@ -52,13 +44,45 @@ viewer = pannellum.viewer('panorama', {
       "createTooltipFunc": hotspot,
       "createTooltipArgs": "Art Gallery"
     },
-    {
+    {// 1
       "pitch": -12,
       "yaw": 125,
       "cssClass": "custom-hotspot",
-      "clickHandlerFunc": function () { handleOpenModal("artGallery") },
+      "clickHandlerFunc": function () { handleOpenModal("mindfulness") },
       "createTooltipFunc": hotspot,
-      "createTooltipArgs": "Mindfullness"
+      "createTooltipArgs": "Mindfulness"
+    },
+    {//9
+      "pitch": -14,
+      "yaw": 70,
+      "cssClass": "custom-hotspot",
+      "clickHandlerFunc": function () { handleOpenModal("mindfulness") },
+      "createTooltipFunc": hotspot,
+      "createTooltipArgs": "Earth Action Club"
+    },
+    {//10
+      "pitch": 6,
+      "yaw": 61,
+      "cssClass": "custom-hotspot",
+      "clickHandlerFunc": function () { handleOpenModal("mindfulness") },
+      "createTooltipFunc": hotspot,
+      "createTooltipArgs": "Sister Constantina Kakonya Mono Print"
+    },
+    {//5
+      "pitch": 14,
+      "yaw": -105,
+      "cssClass": "custom-hotspot",
+      "clickHandlerFunc": function () { handleOpenModal("mindfulness") },
+      "createTooltipFunc": hotspot,
+      "createTooltipArgs": "Sculpture (name?)"
+    },
+    {//5
+      "pitch": 14,
+      "yaw": -73,
+      "cssClass": "custom-hotspot",
+      "clickHandlerFunc": function () { handleOpenModal("mindfulness") },
+      "createTooltipFunc": hotspot,
+      "createTooltipArgs": "Sculpture (name?)"
     }
 
   ],
