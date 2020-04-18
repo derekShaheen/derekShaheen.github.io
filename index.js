@@ -51,6 +51,14 @@ viewer = pannellum.viewer('panorama', {
       "clickHandlerFunc": function () { handleOpenModal("artGallery") },
       "createTooltipFunc": hotspot,
       "createTooltipArgs": "Art Gallery"
+    },
+    {
+      "pitch": -12,
+      "yaw": 125,
+      "cssClass": "custom-hotspot",
+      "clickHandlerFunc": function () { handleOpenModal("artGallery") },
+      "createTooltipFunc": hotspot,
+      "createTooltipArgs": "Mindfullness"
     }
 
   ],
