@@ -102,7 +102,6 @@ viewer = pannellum.viewer('panorama', {
 });
 
 /*begin global constants*/
-var VERSION = '0.2';
 var RIGHT_SIDEPANEL_ID = 'rightSidepanel';
 var LEFT_SIDEPANEL_ID = 'leftSidepanel';
 var MODAL_ID = 'modal';
@@ -112,8 +111,6 @@ var MODAL_CLOSE_ID = 'modalClose';
 var CONTENT_CONTAINER_SHOW_CLASS = 'show-contentContainer';
 var CONTENT_SHOW_CLASS = 'show-content';
 /*end global constants*/
-
-console.log('VERSION: ' + VERSION);
 
 function handleOpenLeftPanel(hotspotContentId) {
   handleOpenContentContainer(hotspotContentId, LEFT_SIDEPANEL_ID);
