@@ -14,18 +14,139 @@
 </head>
 
 <body>
-  <div id="sidepanel">
-    <div id="sidepanelClose">close</div>
-    <div id="bulletin" class="content">
-      <h1>So many happenings in CSS mindfulness, check out this bulletin</h1>
-    </div>
-    <div id="amazingPhoto" class="content">
-      <h1>Wow, have you seen this super amazing photo of CSS from the past?!</h1>
-    </div>
+
+  <div id="modal">
+    <div id="modalClose">close</div>
+    <!-- START put any content youd like to be in MODAL here -->
     <div id="newspaper" class="content">
       <h1>This months's CSS Newspaper</h1>
     </div>
+    <div id="coffeePot" class="content">
+      <h1>Break Time!!</h1>
+      <p>Enjoy a nice cup of coffee from the coffee pot</p>
+    </div>
+    <!-- nature assets, ES, 4/17/20 -->
+    <div id="window" class="content">
+      <div class="windowIntro">
+        <h1>Nature Experience</h1>
+        <p> Explore the campus grounds and immerse yourself in the sights and sounds of nature.</p>
+        <h3>Click on a bird to listen to it sing.</h3>
+      </div>
+      <!-- Bird images -->
+      <img class="birdImages" src="images/Nature/birdChoir.png" alt="">
+      <img class="birdImages" src="images/Nature/goldFinch.png" alt="">
+      <img class="birdImages" src="images/Nature/purpleFinch.png" alt="">
+      <img class="birdImages" src="images/Nature/redBellied.png" alt="">
+      <img class="birdImages" src="images/Nature/warbler.png" alt="">
+      <!-- nature images -->
+      <img class="natureImages" src=images/Nature/natureOne.jpg alt="" />
+      <img class="natureImages" src=images/Nature/natureTwo.jpg alt="" />
+      <img class="natureImages" src=images/Nature/natureThree.jpg alt="" />
+      <img class="natureImages" src=images/Nature/natureFour.jpg alt="" />
+      <img class="natureImages" src=images/Nature/natureFive.jpg alt="" />
+      <img class="natureImages" src="images/Nature/campusOne.jpg" alt="" />
+      <img class="natureImages" src="images/Nature/campusTwo.jpg" alt="" />
+      <img class="natureImages" src="images/Nature/campusThree.jpg" alt="" />
+      <img class="natureImages" src="images/Nature/campusFour.jpg" alt="" />
+      <img class="natureImages" src="images/Nature/campusFive.jpg" alt="" />
+      <img class="natureImages" src="images/Nature/campusSix.jpg" alt="" />
+      <br>
+      <!-- bird audio, ideally this would play with the click of the corresponding bird image,
+    javascipt may be needed here as well-->
+      <audio controls>
+        <source src="audio/birdChoir.mp3" type="audio/mpeg">
+      </audio>
+      <br>
+      <audio controls>
+        <source src="audio/chestnutSidedWarbler.mp3" type="audio/mpeg">
+      </audio>
+      <br>
+      <audio controls>
+        <source src="audio/goldFinch.mp3" type="audio/mpeg">
+      </audio>
+      <br>
+      <audio controls>
+        <source src="audio/purpleFinch.wav" type="audio/wav">
+      </audio>
+      <br>
+      <audio controls>
+        <source src="audio/redBelliedWoodpecker.mp3" type="audio/wav">
+      </audio>
+    </div>
+
+    <!-- art gallery assets, ES, 4/17/20 -->
+    <div id="artGallery" class="content">
+      <div class="artIntro">
+        <h1>Art Gallery</h1>
+        <p>You discovered an art gallery! Take a moment to enjoy some of the art displayed on campus.</p>
+      </div>
+      <div class="carousel">
+        <button id="buttonLeft" class="carousel_button">
+          <img src="images/leftButton.png" alt="">
+        </button>
+        <div class="carousel_track-container">
+          <ul class="carousel_track">
+            <li class="carousel_side current-slide">
+              <img class="carousel_images" src="images/Art/1963Northeast.jpg" alt="">
+            </li>
+            <li>
+              <img class="carousel_images" src="images/Art/1979Scenic.jpg" alt="">
+            </li>
+            <li>
+              <img class="carousel_images" src="images/Art/nostalgia.jpg" alt="">
+            </li>
+            <li>
+              <img class="carousel_images" src="images/Art/stainedGlass.jpg" alt="">
+            </li>
+          </ul>
+        </div>
+        <button id="buttonRight" class="carousel_button">
+          <img src="images/rightButton.png" alt="">
+        </button>
+        <div class="carousel_nav">
+          <button class="carousel_indicator current-slide"></button>
+          <button class="carousel_indicator"></button>
+          <button class="carousel_indicator"></button>
+        </div>
+      </div>
+    </div>
+    <!-- END put any content youd like to be in MODAL here -->
   </div>
+
+
+
+  <div id="leftSidepanel" class="sidepanel">
+    <div id="leftSidepanelClose">close</div>
+    <!-- START put any content youd like to be in LEFT side panel here -->
+    <div id="historicalArchives" class="content">
+      <div class="historicalIntro">
+        <h1>Historical Archives</h1>
+        <p>
+          Learn more about the history of the school!
+        </p>
+      </div>
+      <img class="historicalImages" src="images/History/historicalOne.jpg" alt="A photo of St. Scholastica from the past" />
+      <img class="historicalImages" src="images/History/historicalTwo.jpg" alt="A photo of St. Scholastica from the past" />
+      <img class="historicalImages" src="images/History/historicalThree.jpg" alt="A photo of St. Scholastica from the past" />
+      <img class="historicalImages" src="images/History/historicalFour.jpg" alt="A photo of St. Scholastica from the past" />
+      <p>
+        Check out The College of St. Scholastica's online digital repository,
+        <a href="https://quarry.css.edu/">The Quarry</a>
+        , for additional historical content!
+      </p>
+    </div>
+    <!-- END put any content youd like to be in LEFT side panel here -->
+  </div>
+
+  <div id="rightSidepanel" class="sidepanel">
+    <div id="rightSidepanelClose">close</div>
+    <!-- START put any content youd like to be in RIGHT side panel here -->
+    <div id="bulletin" class="content">
+      <h1>So many happenings in CSS mindfulness, check out this bulletin</h1>
+    </div>
+    <!-- END put any content youd like to be in RIGHT side panel here -->
+  </div>
+
   <div id="panorama"></div>
   <script type="text/javascript" src="./index.js"></script>
 </body>

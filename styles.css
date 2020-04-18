@@ -49,27 +49,72 @@ div.custom-tooltip:hover span:after {
   margin: 0 50%;
 }
 
-#sidepanelClose {
+#rightSidepanelClose {
   padding: 15px;
   background-color: lavender;
   display: inline-block;
 }
 
-#sidepanel {
+#leftSidepanelClose {
+  padding: 15px;
+  background-color: lavender;
+  display: inline-block;
+}
+
+#modalClose {
+  padding: 15px;
+  background-color: lavender;
+  display: inline-block;
+}
+
+.sidepanel {
   border: 2px solid #000;
   background-color: #FFF;
-  width: 0%;
-  height: 100%;
   overflow-y: scroll;
   position: absolute;
-  right: 0;
   z-index: 1000;
+}
+
+#rightSidepanel {
+  width: 0%;
+  height: 100%;
+  right: 0;
   transition: width 0.25s linear;
 }
 
-#sidepanel.show-sidepanel {
+#rightSidepanel.show-contentContainer {
   transition: width 0.25s linear;
   width: 40%;
+}
+
+#leftSidepanel {
+  width: 0%;
+  height: 100%;
+  left: 0;
+  transition: width 0.25s linear;
+}
+
+#leftSidepanel.show-contentContainer {
+  transition: width 0.25s linear;
+  width: 40%;
+}
+
+#modal {
+  background-color: #FFF;
+  overflow-y: scroll;
+  position: absolute;
+  z-index: 1000;
+  width: 0%;
+  height: 80%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#modal.show-contentContainer {
+  border: 2px solid #000;
+  width: 80%;
 }
 
 .content {
@@ -78,4 +123,115 @@ div.custom-tooltip:hover span:after {
 
 .content.show-content {
   display: block;
+}
+
+/*Nature Asset Styling, ES, 4/17/2020*/
+.natureImages {
+  display: block;
+  width: 80%;
+  margin: 10px auto 0 auto;
+}
+
+.windowIntro {
+  text-align: center;
+}
+
+.birdImages {
+  width: 15%;
+}
+
+/*Art Gallery Styling, ES, 4/17/2020*/
+.artIntro {
+  text-align: center;
+}
+
+.carousel {
+  border: 2px sold black;
+  position: relative;
+  height: 350px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.carousel_images {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel_track-container {
+  background: white;
+  border: 16px solid black;
+  padding: 10px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel_track {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  height: 100%;
+  transition: transform 250ms ease-in;
+}
+
+.carousel_slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.carousel_button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+#buttonLeft {
+  left: -45px;
+}
+
+#buttonRight {
+  right: -45px;
+}
+
+.carousel_button img {
+  width: 30px;
+}
+
+.carousel_nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.carousel_indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: rgba(0,0,0,.3);
+  margin: 0 12px;
+}
+
+.carousel_indicator.current-slide {
+  background: rgba(0,0,0,.75);
+}
+
+/*Historical Archives Styling... I am not sure if this will remain a left panel*/
+.historicalImages {
+  display: block;
+  width: 80%;
+  margin: 10px auto 0 auto;
+}
+
+#historicalArchives{
+  text-align: center;
 }
